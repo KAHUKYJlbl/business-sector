@@ -29,12 +29,12 @@ export const Posts = ({filter}: PostsProps): JSX.Element => {
     dispatch(fetchPosts());
   }, []);
 
-  if (!posts.length) {
-    return <Oops type='posts' />
-  }
-
   if (postsLoadingStatus.isLoading) {
     return <LoaderSpinner spinnerType='page' />
+  }
+  
+  if (!posts.length) {
+    return <Oops type='posts' />
   }
 
   return (
