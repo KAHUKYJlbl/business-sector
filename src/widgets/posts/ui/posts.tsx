@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 
-
-import { Oops } from '../../oops';
 import { useAppDispatch } from '../../../shared/lib/hooks/use-app-dispatch';
 import { useAppSelector } from '../../../shared/lib/hooks/use-app-selector';
 import { LoaderSpinner } from '../../../shared/ui/loader-spinner';
@@ -13,6 +11,7 @@ import { fetchPosts } from '../model/api-actions/fetch-posts';
 import { getPagesCount } from '../lib/get-pages-count';
 import { POSTS_PER_PAGE } from '../lib/const';
 import { PostCard } from '../../../entities/post';
+import { Oops } from '../../oops/ui/oops';
 
 type PostsProps = {
   filter: string;
