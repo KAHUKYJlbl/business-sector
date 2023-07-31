@@ -1,0 +1,163 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+}
+
+input:focus {
+  outline: none;
+}
+
+.page-content {
+  display: grid;
+  grid-template-rows: 52px 1fr;
+  row-gap: 15px;
+
+  padding: 23px 78px 12px;
+}
+
+.filter {
+  width: 631px;
+  display: flex;
+
+  background-color: #5A5C66;
+}
+
+.filter input {
+  width: 100%;
+  padding-left: 26px;
+
+  background-color: transparent;
+
+  color: inherit;
+}
+
+.filter svg {
+  margin: 15px 24px 16px;
+}
+
+.posts {
+  display: grid;
+  grid-template-rows: 1fr 54px;
+}
+
+.table {
+  display: grid;
+  grid-template-rows: 54px 1fr;
+}
+
+.sort {
+  display: grid;
+  grid-template-columns: 1fr 5fr 9fr;
+  align-items: center;
+  
+  background-color: #5A5C66;
+  font-weight: 700;
+}
+
+.sort-title {
+  margin: auto;
+  padding-right: auto;
+}
+
+.sort-title span {
+  padding: auto;
+  margin-right: 15px;
+}
+
+.sort-title svg {
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.sort-title.current > svg {
+  color: #7EBC3C;
+}
+
+.posts-list {
+  color: #474955;
+  font-size: 13px;
+}
+
+.posts-list_element {
+  display: grid;
+  grid-template-columns: 1fr 5fr 9fr;
+  align-items: center;
+  text-align: justify;
+
+  border: 1px solid #E3E6EC;
+}
+
+.posts-list_element div {
+  padding: 15px 20px;
+}
+
+.list-element_id {
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 10px 45px 0;
+}
+
+.pagination button {
+  cursor: pointer;
+  color: #474955;
+  background: none;
+}
+
+.pagination button:hover {
+  background: none;
+}
+
+.pagination button:active {
+  background: none;
+}
+
+.pagination-pages {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pagination-pages button {
+  font-size: 18px;
+}
+
+.page.current {
+  color: #7EBC3C;
+}
+
+.pagination-prev,
+.pagination-next {
+  font-size: 24px;
+}
+
+.pagination-prev.disabled,
+.pagination-next.disabled {
+  cursor: auto;
+  opacity: .5;
+}
+
+.page {
+  margin: 0 10px;
+  cursor: pointer;
+}
